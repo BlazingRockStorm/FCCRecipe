@@ -8,7 +8,7 @@ class Dish extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="">
                 <div className="">
                     <div className=""><p>{this.props.dishName}</p></div>
                     <IngredientsList ingredients={this.props.ingredients} />

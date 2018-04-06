@@ -1,3 +1,11 @@
 h1 {
   text-align: center;
 }
+
+ul {
+  background-color: yellowgreen;
+}
+
+ul li {
+  display: block;
+}

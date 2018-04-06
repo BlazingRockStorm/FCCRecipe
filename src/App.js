@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import IngredientsList from './IngredientsList';
-import Dish from './Dish';
 import Dishes from './Dishes';
 
 var dishes = 	[{
@@ -17,7 +15,9 @@ var dishes = 	[{
 class App extends Component {
   render() {
     return (
-      <Dishes dishes={dishes} />
+      <div className="container">
+        <Dishes dishes={dishes} />
+      </div>
     );
   }
 }
