@@ -11,7 +11,7 @@ class Dishes extends React.Component {
         let dishes = this.state.dishes.slice();
         dishes.forEach((dish, index) => {
             if (dish.dishName === dishName) {
-                dish.splice(index, 1);
+                dishes.splice(index, 1);
             }
         });
         this.setState({dishes});
