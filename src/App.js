@@ -6,10 +6,16 @@ var dishes = 	[{
   ingredients: ["Pumpkin Puree", "Sweetened Condensed Milk", "Eggs", "Pumpkin Pie Spice", "Pie Crust"]
 }, {
   dishName: "Spaghetti",
-  ingredients: ["Noodles", "Tomato Sauce", "(Optional) Meatballs"]
+  ingredients: ["Noodles", "Tomato Sauce", "(Optional) Meatballs","(Optional) Cheese","(Optional) Minced Beef","(Optional) Minced Pork","Butter","Wheat"]
 }, {
   dishName: "Onion Pie",
-  ingredients: ["Onion", "Pie Crust", "Sounds Yummy right?"]
+  ingredients: ["Onion", "Pie Crust"]
+}, {
+  dishName: "Egg Coffee",
+  ingredients: ["Egg", "Coffee", "Milk"]
+}, {
+  dishName: "Oyakodon",
+  ingredients: ["Onion", "Chicken", "Egg", "Mirin", "Soy Souce"]
 }];
 
 class App extends Component {
@@ -17,6 +23,7 @@ class App extends Component {
     return (
       <div className="container">
         <Dishes dishes={dishes} />
+        <button className="btn btn-primary">Add Dish</button>
       </div>
     );
   }

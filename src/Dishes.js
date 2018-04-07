@@ -12,7 +12,7 @@ class Dishes extends React.Component {
             <Dish key={i} dishName={dish.dishName} ingredients={dish.ingredients} />
         );
         return(
-            <div>{this.dishes}</div>
+            <div className="row">{this.dishes}</div>
         );
     }
 }

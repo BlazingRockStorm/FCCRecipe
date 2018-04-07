@@ -1,9 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Jua);
+html{
+    background-color: lightblue;
+}
+
 h1{
     text-align: center;
+    font-family: Jua !important;
+}
+
+body{
+    background-color: inherit !important;
+}
+
+.panel-heading{
+    background-color: rgb(223, 223, 97) !important;
+    font-weight: bold;
+}
+
+.panel-body{
+    height: 200px;
+    background-color: rgb(248, 248, 134);
+    button{
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 ul{
-    background-color: yellowgreen;
+    padding-left: 0px;
+    height: 130px;
+    overflow: auto;
     li{
         display: block;
     }

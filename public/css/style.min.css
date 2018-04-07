@@ -1,1 +1,1 @@
-h1{text-align:center}ul{background-color:yellowgreen}ul li{display:block}
+@import url(https://fonts.googleapis.com/css?family=Jua);html{background-color:lightblue}h1{text-align:center;font-family:Jua !important}body{background-color:inherit !important}.panel-heading{background-color:#dfdf61 !important;font-weight:bold}.panel-body{height:200px;background-color:#f8f886}.panel-body button{margin-right:5px;margin-bottom:5px}ul{padding-left:0px;height:130px;overflow:auto}ul li{display:block}
