@@ -6,6 +6,11 @@ class Dish extends React.Component {
         super(props);
     }
 
+    handleDelete(dishName) {
+      this.props.deleteDish(dishName);
+    }
+  
+
     render() {
         return (
             <div className="col-md-3">
@@ -14,7 +19,7 @@ class Dish extends React.Component {
                     <div  className="panel-body">
                         <IngredientsList ingredients={this.props.ingredients} />
                         <button className="btn btn-default">Edit</button>
-                        <button className="btn btn-danger">Delete</button>
+                        <button className="btn btn-danger" onClick={this.handleDelete.bind(this, this.props.dishName)}>Delete</button>
                     </div>
                 </div>
             </div>
