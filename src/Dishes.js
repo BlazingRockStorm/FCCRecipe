@@ -9,12 +9,19 @@ class Dishes extends React.Component {
         };
     }
 
+    componentDidMount() {
+        var dishes = this.props.dishes
+        this.setState({
+            dishes: dishes
+        })
+    }
+
+    // function delete
     deleteDish(dishName) {
-        // let dishes = this.props.dishes.filter(dish => dish.dishName !== dishName);
-        let dishes = this.props.dishes;
+        let dishes = this.state.dishes;
         dishes.forEach((dish,index) => {
             if(dish.dishName === dishName)
-            dishes.splice(index,1);
+                dishes.splice(index,1);
         });
         this.setState({dishes});
     }
