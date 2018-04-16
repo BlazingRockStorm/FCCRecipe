@@ -4,15 +4,17 @@ import Dish from './Dish';
 class Dishes extends React.Component {
     constructor(props){
         super(props);
-        this.dishes=[];
+        this.state = {
+            dishes : this.props.dishes
+        };
     }
 
-    deleteDish(dishName){
-        let dishes = this.state.dishes.slice();
-        dishes.forEach((dish, index) => {
-            if (dish.dishName === dishName) {
-                dishes.splice(index, 1);
-            }
+    deleteDish(dishName) {
+        // let dishes = this.props.dishes.filter(dish => dish.dishName !== dishName);
+        let dishes = this.props.dishes;
+        dishes.forEach((dish,index) => {
+            if(dish.dishName === dishName)
+            dishes.splice(index,1);
         });
         this.setState({dishes});
     }
