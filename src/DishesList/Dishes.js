@@ -17,9 +17,8 @@ class Dishes extends React.Component {
     }
 
     // function edit
-
     editDish(dishName) {
-        alert(dishName);
+        // edit functions here
     }
 
     // function delete
