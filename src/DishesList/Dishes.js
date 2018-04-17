@@ -16,6 +16,12 @@ class Dishes extends React.Component {
         })
     }
 
+    // function edit
+
+    editDish(dishName) {
+        alert(dishName);
+    }
+
     // function delete
     deleteDish(dishName) {
         let dishes = this.state.dishes;
@@ -28,7 +34,12 @@ class Dishes extends React.Component {
 
     render() {
         this.dishes = this.props.dishes.map((dish,i)=>
-            <Dish key={i} dishName={dish.dishName} ingredients={dish.ingredients} deleteDish={this.deleteDish.bind(this)} />
+            <Dish key={i} 
+                dishName={dish.dishName} 
+                ingredients={dish.ingredients} 
+                deleteDish={this.deleteDish.bind(this)} 
+                editDish={this.editDish.bind(this)}
+            />
         );
         return(
             <div className="row">{this.dishes}</div>

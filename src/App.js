@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Dishes from './Dishes';
+import Dishes from './DishesList/Dishes';
 
 var dishes = 	[{
   dishName: "Pumpkin Pie",
