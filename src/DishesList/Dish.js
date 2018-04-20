@@ -19,7 +19,7 @@ class Dish extends React.Component {
                     <div className="panel-heading">{this.props.dishName}</div>
                     <div  className="panel-body">
                         <IngredientsList ingredients={this.props.ingredients} />
-                        <button className="btn btn-default" onClick={this.handleEdit.bind(this, this.props.dishName)}  data-toggle="modal" data-target="#editModal">Edit</button>
+                        <button className="btn btn-default" onClick={this.handleEdit.bind(this, this.props.dishName)}  data-toggle="modal" data-target={'#'+this.props.dishName}>Edit</button>
                         <button className="btn btn-danger" onClick={this.handleDelete.bind(this, this.props.dishName)}>Delete</button>
                         <ModalForm dishName={this.props.dishName} />
                     </div>
