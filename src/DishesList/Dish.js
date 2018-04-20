@@ -21,8 +21,8 @@ class Dish extends React.Component {
                         <IngredientsList ingredients={this.props.ingredients} />
                         <button className="btn btn-default" onClick={this.handleEdit.bind(this, this.props.dishName)}  data-toggle="modal" data-target="#editModal">Edit</button>
                         <button className="btn btn-danger" onClick={this.handleDelete.bind(this, this.props.dishName)}>Delete</button>
+                        <ModalForm dishName={this.props.dishName} />
                     </div>
-                    <ModalForm dishName={this.props.dishName} />
                 </div>
             </div>
         );
